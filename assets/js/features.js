@@ -78,7 +78,7 @@ switchDarkMode = function () {
     const rootElement = document.documentElement; // <html>
     const darkModeStorageKey = 'user-color-scheme'; // use as localStorage's key
     const rootElementDarkModeAttributeName = 'data-user-color-scheme';
-    const darkModeTogglebuttonElement = document.getElementById('dark-mode-button');
+    // const darkModeTogglebuttonElement = document.getElementById('dark-mode-button');
 
     const setLS = (k, v) => {
         try {
@@ -115,14 +115,14 @@ switchDarkMode = function () {
         'light': true
     }
 
-    const modeIcons = {
-        'dark': '☀️',
-        'light': '🌙'
-    }
+    // const modeIcons = {
+    //     'dark': '☀️',
+    //     'light': '🌙'
+    // }
 
-    const setModeButtonIcon = (mode) => {
-        darkModeTogglebuttonElement.innerHTML = modeIcons[mode]
-    }
+    // const setModeButtonIcon = (mode) => {
+    //     darkModeTogglebuttonElement.innerHTML = modeIcons[mode]
+    // }
 
     const applyCustomDarkModeSettings = (mode) => {
         // receive user's operation or get previous mode from localStorage
@@ -137,12 +137,10 @@ switchDarkMode = function () {
             nowMode = currentSetting
             rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
         } else {
-            // 首次访问或从未使用过开关、localStorage 中没有存储的值，currentSetting 是 null
-            // 或者 localStorage 被篡改，currentSetting 不是合法值
             nowMode = getModeFromCSSMediaQuery()
             resetRootDarkModeAttributeAndLS();
         }
-        setModeButtonIcon(nowMode)
+        // setModeButtonIcon(nowMode)
     }
 
     const invertDarkModeObj = {
@@ -173,8 +171,8 @@ switchDarkMode = function () {
     // when page loaded set page mode
     applyCustomDarkModeSettings();
 
-    darkModeTogglebuttonElement.addEventListener('click', () => {
-        // handle user click switch dark mode button
-        applyCustomDarkModeSettings(toggleCustomDarkMode());
-    })
+    // darkModeTogglebuttonElement.addEventListener('click', () => {
+    //     // handle user click switch dark mode button
+    //     applyCustomDarkModeSettings(toggleCustomDarkMode());
+    // })
 }();
