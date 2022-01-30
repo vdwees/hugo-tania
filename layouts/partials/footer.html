@@ -31,7 +31,4 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
         onload="renderMathInElement(document.querySelector('.article-post'));"></script>
     {{- end }}
-
-    {{ $features := resources.Get "js/features.js" | minify | fingerprint }}
-    <script async src="{{ $features.RelPermalink }}" data-enable-footnotes="{{ .Site.Params.enableFootnotes | default true }}"></script>
 </footer>
