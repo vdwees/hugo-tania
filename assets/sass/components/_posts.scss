@@ -15,17 +15,12 @@
     }
 }
 
-.posts .post:last-of-type a {
-    border-bottom-width: 0;
-}
-
 .post {
     a {
         display: flex;
         align-items: center;
         justify-content: stretch;
         padding: 1rem 0;
-        border-bottom: 2px solid var(--light-background);
 
         &:hover {
             border-radius: 0.3rem;
@@ -50,7 +45,6 @@
     .post {
         a {
             padding: 0.75rem 1rem;
-            border-bottom-color: transparent;
 
             &:hover {
                 background: var(--light-background);
