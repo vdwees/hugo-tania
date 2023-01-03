@@ -10,10 +10,6 @@ main {
     }
 }
 
-.emoji {
-    margin: 0 0.4rem 0 0.1rem;
-}
-
 .navbar {
     width: 100%;
     position: fixed;
@@ -43,10 +39,6 @@ main {
             margin-left: -1rem;
         }
 
-        .emoji {
-            display: none;
-        }
-
         &.brand {
             font-weight: 500;
             color: white;
@@ -56,10 +48,6 @@ main {
             align-items: center;
             line-height: 1;
             background: transparent;
-
-            .emoji {
-                display: inline-block !important;
-            }
 
             img {
                 height: 22px;
@@ -82,10 +70,6 @@ main {
 }
 
 @media screen and (min-width: 800px) {
-    .emoji {
-        margin: 0 0.5rem 0 0.1rem;
-    }
-
     .navbar {
         position: static;
         padding: 1.5rem 0;

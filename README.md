@@ -36,12 +36,6 @@ Edit your site config following `exampleSite/config.yaml`.
 
 ### Params
 
-`titleEmoji` will show before the blog title on site navbar.
-
-```yaml
-titleEmoji: '😎'
-```
-
 `socialOptions` will show on index bio with `_index.md` content.
 Account with icon can set as below:
 ```yaml

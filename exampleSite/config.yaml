@@ -5,7 +5,6 @@ theme: "hugo-tania"
 paginate: 6
 
 params:
-  titleEmoji: '😎'
   socialOptions:
     github: https://github.com/WingLim
     email: email@example.com
