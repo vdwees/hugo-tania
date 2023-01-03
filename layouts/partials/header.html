@@ -3,13 +3,8 @@
         <div class="flex">
             <div>
                 <a class="brand" href="{{ relURL "/" }}">
-                    {{ if .Site.Params.titleEmoji }}
-                    <span class="emoji">
-                        {{ .Site.Params.titleEmoji }}
-                    </span>
-                    {{ end }}
                     {{ .Site.Title }}
-                    </a>
+                </a>
             </div>
             <div class="flex">
                 {{ range .Site.Menus.header }}
