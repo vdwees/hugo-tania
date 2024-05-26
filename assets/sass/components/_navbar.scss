@@ -90,36 +90,10 @@ main {
             }
         }
     }
-
-    #dark-mode-button:hover {
-        background: var(--light-background);
-    }
 }
 
 @media print {
     .navbar {
         display: none;
-    }
-}
-
-#dark-mode-button {
-    display: flex;
-    border: none;
-    padding: 0.2rem 0.7rem 0.2rem 0.5rem;
-    border-radius: 0.35rem;
-    box-sizing: content-box;
-    cursor: pointer;
-    font-size: 1.1rem;
-    background: transparent;
-
-    &:focus {
-        outline: none;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    #dark-mode-button {
-        padding: 0.95rem 0.75rem;
-        font-size: 1.2rem;
     }
 }
